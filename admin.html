@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Admin Page</title>
+<style type="text/css">
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #CD6305;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+h1 {
+    margin: 20px 0;
+}
+.container {
+    margin: 30px auto;
+    width: 80%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+button {
+    background-color: #AB7F6E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+button:hover {
+    background-color: #CD6305;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #CD6305;
+}
+.navbar a {
+    text-decoration: none;
+    color: #CD6305;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.admin-options {
+    margin: 20px 0;
+}
+.admin-options button {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #AB7F6E;
+    color: white;
+    font-size: 18px;
+}
+.admin-options button:hover {
+    background-color: #CD6305;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Admin Dashboard</h1>
+</header>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="logout.html">Logout</a>
+</div>
+
+<div class="container">
+    <h2>Welcome, Admin!</h2>
+    <p>Use the options below to manage the website:</p>
+    <div class="admin-options">
+        <button onclick="window.location.href='manage-products.html'">Manage Products</button>
+        <button onclick="window.location.href='manage-drafts.html'">Manage Content</button>
+        <button onclick="window.location.href='view-analytics.html'">View Analytics</button>
+        <button onclick="window.location.href='settings.html'">Settings</button>
+    </div>
+</div>
+</body>
+</html>
